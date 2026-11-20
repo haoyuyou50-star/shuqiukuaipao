@@ -1,0 +1,322 @@
+{
+  "test": "Blender re-import of generated FBX; not a Unity import",
+  "blender": "4.3.2",
+  "total": 24,
+  "missing": [],
+  "unexpected": [],
+  "passed_count": 24,
+  "reports": [
+    {
+      "asset": "A01_Potato",
+      "passed": true,
+      "visual_triangles": 1452,
+      "proxy_triangles": 0,
+      "checked_markers": 0,
+      "bounds_m": [
+        0.06095,
+        0.05508,
+        0.05975
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A02_FlourInsert",
+      "passed": true,
+      "visual_triangles": 732,
+      "proxy_triangles": 12,
+      "checked_markers": 2,
+      "bounds_m": [
+        0.19,
+        0.134,
+        0.0012
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A03_AutomaticFryer",
+      "passed": true,
+      "visual_triangles": 4492,
+      "proxy_triangles": 72,
+      "checked_markers": 7,
+      "bounds_m": [
+        0.283,
+        0.22974,
+        0.132
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A04_KetchupDish",
+      "passed": true,
+      "visual_triangles": 1620,
+      "proxy_triangles": 0,
+      "checked_markers": 0,
+      "bounds_m": [
+        0.16314,
+        0.16314,
+        0.03764
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A05_RingReference",
+      "passed": true,
+      "visual_triangles": 748,
+      "proxy_triangles": 0,
+      "checked_markers": 3,
+      "bounds_m": [
+        0.134,
+        0.024,
+        0.157
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A06_BounceInsert",
+      "passed": true,
+      "visual_triangles": 1016,
+      "proxy_triangles": 0,
+      "checked_markers": 1,
+      "bounds_m": [
+        0.098,
+        0.00725,
+        0.098
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A07_HamburgerBox",
+      "passed": true,
+      "visual_triangles": 1824,
+      "proxy_triangles": 0,
+      "checked_markers": 0,
+      "bounds_m": [
+        0.19237,
+        0.23679,
+        0.18925
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A08_TakeoutBoxRamp",
+      "passed": true,
+      "visual_triangles": 2956,
+      "proxy_triangles": 36,
+      "checked_markers": 2,
+      "bounds_m": [
+        0.17564,
+        0.361,
+        0.078
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A09_FryCartonCatch",
+      "passed": true,
+      "visual_triangles": 1456,
+      "proxy_triangles": 144,
+      "checked_markers": 2,
+      "bounds_m": [
+        0.255,
+        0.336,
+        0.144
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A10_ShallowTray",
+      "passed": true,
+      "visual_triangles": 1224,
+      "proxy_triangles": 36,
+      "checked_markers": 4,
+      "bounds_m": [
+        0.256,
+        0.31,
+        0.049
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A11_Spatula",
+      "passed": true,
+      "visual_triangles": 1656,
+      "proxy_triangles": 36,
+      "checked_markers": 5,
+      "bounds_m": [
+        0.128,
+        0.357,
+        0.06182
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A12_Tongs",
+      "passed": true,
+      "visual_triangles": 1884,
+      "proxy_triangles": 88,
+      "checked_markers": 3,
+      "bounds_m": [
+        0.205,
+        0.21788,
+        0.053
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A13_TippingCup",
+      "passed": true,
+      "visual_triangles": 2796,
+      "proxy_triangles": 228,
+      "checked_markers": 3,
+      "bounds_m": [
+        0.218,
+        0.19338,
+        0.1345
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A14_RollingPin",
+      "passed": true,
+      "visual_triangles": 3768,
+      "proxy_triangles": 88,
+      "checked_markers": 2,
+      "bounds_m": [
+        0.144,
+        0.227,
+        0.05882
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A15_StraightChannel",
+      "passed": true,
+      "visual_triangles": 324,
+      "proxy_triangles": 36,
+      "checked_markers": 2,
+      "bounds_m": [
+        0.12,
+        0.21,
+        0.04189
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A16_ArcChannel",
+      "passed": true,
+      "visual_triangles": 1260,
+      "proxy_triangles": 348,
+      "checked_markers": 2,
+      "bounds_m": [
+        0.17992,
+        0.17992,
+        0.06373
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A17_TransitionSlope",
+      "passed": true,
+      "visual_triangles": 540,
+      "proxy_triangles": 36,
+      "checked_markers": 2,
+      "bounds_m": [
+        0.118,
+        0.162,
+        0.06952
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A18_TrackGuards",
+      "passed": true,
+      "visual_triangles": 4400,
+      "proxy_triangles": 144,
+      "checked_markers": 3,
+      "bounds_m": [
+        0.22017,
+        0.28586,
+        0.0515
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A19_WedgeBlock",
+      "passed": true,
+      "visual_triangles": 972,
+      "proxy_triangles": 12,
+      "checked_markers": 3,
+      "bounds_m": [
+        0.201,
+        0.248,
+        0.05059
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A20_AxleSupport",
+      "passed": true,
+      "visual_triangles": 3588,
+      "proxy_triangles": 0,
+      "checked_markers": 3,
+      "bounds_m": [
+        0.206,
+        0.104,
+        0.10882
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A21_StopBlock",
+      "passed": true,
+      "visual_triangles": 324,
+      "proxy_triangles": 12,
+      "checked_markers": 1,
+      "bounds_m": [
+        0.097,
+        0.056,
+        0.077
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A22_Counterweight",
+      "passed": true,
+      "visual_triangles": 1104,
+      "proxy_triangles": 0,
+      "checked_markers": 1,
+      "bounds_m": [
+        0.07,
+        0.044,
+        0.039
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A23_StopperGate",
+      "passed": true,
+      "visual_triangles": 2532,
+      "proxy_triangles": 12,
+      "checked_markers": 3,
+      "bounds_m": [
+        0.175,
+        0.0565,
+        0.10277
+      ],
+      "problems": []
+    },
+    {
+      "asset": "A24_StarCrumb",
+      "passed": true,
+      "visual_triangles": 552,
+      "proxy_triangles": 0,
+      "checked_markers": 1,
+      "bounds_m": [
+        0.04171,
+        0.03967,
+        0.017
+      ],
+      "problems": []
+    }
+  ]
+}

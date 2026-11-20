@@ -1,0 +1,919 @@
+{
+  "units": "metres",
+  "blender_space": "Z up; +Y downstream",
+  "ball_collision_diameter_m": 0.06,
+  "palette_srgb_hex": {
+    "cream": "FCEDD1",
+    "red": "D74E42",
+    "honey": "FFBD58",
+    "petrol": "2F7374",
+    "dark": "483129",
+    "pale": "E8C491",
+    "orange": "E88F36",
+    "white": "FFF7E5",
+    "mint": "A8C9B7",
+    "rust": "B66B37",
+    "oil": "F6B049",
+    "sauce": "BC352A"
+  },
+  "assets": [
+    {
+      "id": "A01",
+      "asset": "A01_Potato",
+      "name": "薯球",
+      "render_triangles": 1452,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.06095,
+        0.05508,
+        0.05975
+      ],
+      "markers": [],
+      "notes": {
+        "collider": "sphere centered at root; diameter=0.060m",
+        "variants": "raw=pale; dusted=white; first_fry=honey; double_fry=orange"
+      }
+    },
+    {
+      "id": "A02",
+      "asset": "A02_FlourInsert",
+      "name": "铺粉区 · Independent flour insert",
+      "render_triangles": 732,
+      "proxy_triangles": 12,
+      "visual_bounds_m": [
+        0.19,
+        0.134,
+        0.0012
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A02_FlourInsert",
+          "position_m": [
+            0.0,
+            -0.067,
+            0.0
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A02_FlourInsert",
+          "position_m": [
+            0.0,
+            0.067,
+            0.0
+          ]
+        }
+      ],
+      "notes": {
+        "mount_on": "A10_ShallowTray / MOUNT_FlourInsert",
+        "trigger_only": true,
+        "surface_offset_m": 0.001
+      }
+    },
+    {
+      "id": "A03",
+      "asset": "A03_AutomaticFryer",
+      "name": "自动炸锅 · Double-fry launch station",
+      "render_triangles": 4492,
+      "proxy_triangles": 72,
+      "visual_bounds_m": [
+        0.283,
+        0.22974,
+        0.132
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A03_AutomaticFryer",
+          "position_m": [
+            0.0,
+            -0.092,
+            0.13
+          ]
+        },
+        {
+          "name": "MOUNT_ProgressUI",
+          "parent": "A03_AutomaticFryer",
+          "position_m": [
+            0.0,
+            -0.121,
+            0.152
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A03_AutomaticFryer",
+          "position_m": [
+            0.0,
+            0.0,
+            0.163
+          ]
+        },
+        {
+          "name": "POS_FryBallCenter",
+          "parent": "A03_AutomaticFryer",
+          "position_m": [
+            0.0,
+            0.0,
+            0.135
+          ]
+        },
+        {
+          "name": "POS_LaunchBallCenter",
+          "parent": "A03_AutomaticFryer",
+          "position_m": [
+            0.0,
+            0.0,
+            0.163
+          ]
+        },
+        {
+          "name": "REF_LaunchVector",
+          "parent": "A03_AutomaticFryer",
+          "position_m": [
+            0.0,
+            0.0,
+            0.243
+          ]
+        },
+        {
+          "name": "SURFACE_Oil",
+          "parent": "A03_AutomaticFryer",
+          "position_m": [
+            0.0,
+            0.0,
+            0.108
+          ]
+        }
+      ],
+      "notes": {
+        "clear_mouth_m": 0.16,
+        "rim_plane_z_m": 0.13
+      }
+    },
+    {
+      "id": "A04",
+      "asset": "A04_KetchupDish",
+      "name": "Ketchup dish / removable sauce",
+      "render_triangles": 1620,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.16314,
+        0.16314,
+        0.03764
+      ],
+      "markers": [],
+      "notes": {}
+    },
+    {
+      "id": "A05",
+      "asset": "A05_RingReference",
+      "name": "双环占位",
+      "render_triangles": 748,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.134,
+        0.024,
+        0.157
+      ],
+      "markers": [
+        {
+          "name": "GRIP",
+          "parent": "A05_RingReference",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.078
+          ]
+        },
+        {
+          "name": "NORMAL_+Y",
+          "parent": "A05_RingReference",
+          "position_m": [
+            0.0,
+            0.04,
+            0.0
+          ]
+        },
+        {
+          "name": "RING_CENTER",
+          "parent": "A05_RingReference",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "notes": {
+        "placeholder_clear_ID_m": 0.098
+      }
+    },
+    {
+      "id": "A06",
+      "asset": "A06_BounceInsert",
+      "name": "弹板嵌件",
+      "render_triangles": 1016,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.098,
+        0.00725,
+        0.098
+      ],
+      "markers": [
+        {
+          "name": "NORMAL_+Y",
+          "parent": "A06_BounceInsert",
+          "position_m": [
+            0.0,
+            0.04,
+            0.0
+          ]
+        }
+      ],
+      "notes": {
+        "collider": "thin circular face sized to measured ring; placeholder 98mm"
+      }
+    },
+    {
+      "id": "A07",
+      "asset": "A07_HamburgerBox",
+      "name": "Hamburger box",
+      "render_triangles": 1824,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.19237,
+        0.23679,
+        0.18925
+      ],
+      "markers": [],
+      "notes": {}
+    },
+    {
+      "id": "A08",
+      "asset": "A08_TakeoutBoxRamp",
+      "name": "Takeout box / lid ramp",
+      "render_triangles": 2956,
+      "proxy_triangles": 36,
+      "visual_bounds_m": [
+        0.17564,
+        0.361,
+        0.078
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "Takeout lid hinge • X",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "Takeout lid hinge • X",
+          "position_m": [
+            0.0,
+            0.156,
+            -0.045
+          ]
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "id": "A09",
+      "asset": "A09_FryCartonCatch",
+      "name": "Fry carton / funnel track",
+      "render_triangles": 1456,
+      "proxy_triangles": 144,
+      "visual_bounds_m": [
+        0.255,
+        0.336,
+        0.144
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A09_FryCartonCatch",
+          "position_m": [
+            0.0,
+            -0.16,
+            0.088
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A09_FryCartonCatch",
+          "position_m": [
+            0.0,
+            0.176,
+            0.013
+          ]
+        }
+      ],
+      "notes": {
+        "nominal_ball_diameter_m": 0.06,
+        "through_path_center_and_start_offsets_m": "0, -0.060, +0.060 (analytic bounds)",
+        "outlet_clear_width_m": 0.1
+      }
+    },
+    {
+      "id": "A10",
+      "asset": "A10_ShallowTray",
+      "name": "浅餐盘 · Reusable shallow tray",
+      "render_triangles": 1224,
+      "proxy_triangles": 36,
+      "visual_bounds_m": [
+        0.256,
+        0.31,
+        0.049
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A10_ShallowTray",
+          "position_m": [
+            0.0,
+            -0.15,
+            0.016
+          ]
+        },
+        {
+          "name": "MOUNT_FlourInsert",
+          "parent": "A10_ShallowTray",
+          "position_m": [
+            0.0,
+            0.0,
+            0.016
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A10_ShallowTray",
+          "position_m": [
+            0.0,
+            0.15,
+            0.016
+          ]
+        },
+        {
+          "name": "SURFACE_Tray",
+          "parent": "A10_ShallowTray",
+          "position_m": [
+            0.0,
+            0.0,
+            0.016
+          ]
+        }
+      ],
+      "notes": {
+        "install_pitch_deg": 8.0,
+        "floor_z_m": 0.016,
+        "clear_width_m": 0.202
+      }
+    },
+    {
+      "id": "A11",
+      "asset": "A11_Spatula",
+      "name": "Long-handle spatula",
+      "render_triangles": 1656,
+      "proxy_triangles": 36,
+      "visual_bounds_m": [
+        0.128,
+        0.357,
+        0.06182
+      ],
+      "markers": [
+        {
+          "name": "ACTUATOR",
+          "parent": "A11_Spatula",
+          "position_m": [
+            0.0,
+            -0.194,
+            0.007
+          ]
+        },
+        {
+          "name": "IN",
+          "parent": "A11_Spatula",
+          "position_m": [
+            0.0,
+            -0.206,
+            0.025
+          ]
+        },
+        {
+          "name": "LIMIT_CONTACT",
+          "parent": "A11_Spatula",
+          "position_m": [
+            0.0,
+            0.09,
+            0.009
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A11_Spatula",
+          "position_m": [
+            0.0,
+            0.151,
+            0.023
+          ]
+        },
+        {
+          "name": "WEIGHT",
+          "parent": "A11_Spatula",
+          "position_m": [
+            0.0,
+            -0.102,
+            0.004
+          ]
+        }
+      ],
+      "notes": {
+        "hinge_axis": "X",
+        "home_angle_deg": 5.0,
+        "limit_angle_deg": -9.0
+      }
+    },
+    {
+      "id": "A12",
+      "asset": "A12_Tongs",
+      "name": "Tongs diverter",
+      "render_triangles": 1884,
+      "proxy_triangles": 88,
+      "visual_bounds_m": [
+        0.205,
+        0.21788,
+        0.053
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A12_Tongs",
+          "position_m": [
+            0.0,
+            -0.135,
+            0.019
+          ]
+        },
+        {
+          "name": "OUT_LEFT",
+          "parent": "A12_Tongs",
+          "position_m": [
+            -0.05,
+            0.073,
+            0.04
+          ]
+        },
+        {
+          "name": "OUT_RIGHT",
+          "parent": "A12_Tongs",
+          "position_m": [
+            0.05,
+            0.073,
+            0.04
+          ]
+        }
+      ],
+      "notes": {
+        "neutral_collision_clearance_m": 0.08,
+        "assembly_note": "A15 bridge below arms provides floor; use one arm at a time for diverter, avoid pinch at opposed tip."
+      }
+    },
+    {
+      "id": "A13",
+      "asset": "A13_TippingCup",
+      "name": "Pouring measure",
+      "render_triangles": 2796,
+      "proxy_triangles": 228,
+      "visual_bounds_m": [
+        0.218,
+        0.19338,
+        0.1345
+      ],
+      "markers": [
+        {
+          "name": "COUNTERWEIGHT",
+          "parent": "CUP_X_PIVOT",
+          "position_m": [
+            0.0,
+            -0.03,
+            -0.045
+          ]
+        },
+        {
+          "name": "IN",
+          "parent": "CUP_X_PIVOT",
+          "position_m": [
+            0.0,
+            0.016,
+            0.056
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "CUP_X_PIVOT",
+          "position_m": [
+            0.0,
+            0.123,
+            0.045
+          ]
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "id": "A14",
+      "asset": "A14_RollingPin",
+      "name": "Rolling pin pair",
+      "render_triangles": 3768,
+      "proxy_triangles": 88,
+      "visual_bounds_m": [
+        0.144,
+        0.227,
+        0.05882
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A14_RollingPin",
+          "position_m": [
+            0.0,
+            -0.113,
+            0.049
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A14_RollingPin",
+          "position_m": [
+            0.0,
+            0.113,
+            0.049
+          ]
+        }
+      ],
+      "notes": {
+        "collision_note": "Gap .032 m between rollers is smaller than reference ball; tune damping and end rails with actual level."
+      }
+    },
+    {
+      "id": "A15",
+      "asset": "A15_StraightChannel",
+      "name": "Straight chute",
+      "render_triangles": 324,
+      "proxy_triangles": 36,
+      "visual_bounds_m": [
+        0.12,
+        0.21,
+        0.04189
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A15_StraightChannel",
+          "position_m": [
+            0.0,
+            -0.105,
+            0.028
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A15_StraightChannel",
+          "position_m": [
+            0.0,
+            0.105,
+            0.022
+          ]
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "id": "A16",
+      "asset": "A16_ArcChannel",
+      "name": "Falling arc channel",
+      "render_triangles": 1260,
+      "proxy_triangles": 348,
+      "visual_bounds_m": [
+        0.17992,
+        0.17992,
+        0.06373
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A16_ArcChannel",
+          "position_m": [
+            0.0,
+            -0.1185,
+            0.056
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A16_ArcChannel",
+          "position_m": [
+            0.1185,
+            0.0,
+            0.031
+          ]
+        }
+      ],
+      "notes": {
+        "in_tangent": "+X",
+        "out_tangent": "+Y"
+      }
+    },
+    {
+      "id": "A17",
+      "asset": "A17_TransitionSlope",
+      "name": "Transition ramp",
+      "render_triangles": 540,
+      "proxy_triangles": 36,
+      "visual_bounds_m": [
+        0.118,
+        0.162,
+        0.06952
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A17_TransitionSlope",
+          "position_m": [
+            0.0,
+            -0.081,
+            0.056
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A17_TransitionSlope",
+          "position_m": [
+            0.0,
+            0.081,
+            0.016
+          ]
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "id": "A18",
+      "asset": "A18_TrackGuards",
+      "name": "Straight and curved track guards",
+      "render_triangles": 4400,
+      "proxy_triangles": 144,
+      "visual_bounds_m": [
+        0.22017,
+        0.28586,
+        0.0515
+      ],
+      "markers": [
+        {
+          "name": "A10_TRAY_ORIGIN",
+          "parent": "CURVED",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "CURVED",
+          "position_m": [
+            0.0,
+            0.15,
+            0.016
+          ]
+        },
+        {
+          "name": "MOUNT",
+          "parent": "STRAIGHT",
+          "position_m": [
+            0.0,
+            0.0,
+            0.016
+          ]
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "id": "A19",
+      "asset": "A19_WedgeBlock",
+      "name": "楔形垫块 · 8° tray support",
+      "render_triangles": 972,
+      "proxy_triangles": 12,
+      "visual_bounds_m": [
+        0.201,
+        0.248,
+        0.05059
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A19_WedgeBlock",
+          "position_m": [
+            0.0,
+            -0.124,
+            0.051427
+          ]
+        },
+        {
+          "name": "MOUNT_Tray",
+          "parent": "A19_WedgeBlock",
+          "position_m": [
+            0.0,
+            0.0,
+            0.034
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A19_WedgeBlock",
+          "position_m": [
+            0.0,
+            0.124,
+            0.016573
+          ]
+        }
+      ],
+      "notes": {
+        "support_angle_deg": -8.0,
+        "mount_height_m": 0.034
+      }
+    },
+    {
+      "id": "A20",
+      "asset": "A20_AxleSupport",
+      "name": "Reusable axle and stand",
+      "render_triangles": 3588,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.206,
+        0.104,
+        0.10882
+      ],
+      "markers": [
+        {
+          "name": "AXLE_LEFT",
+          "parent": "A20_AxleSupport",
+          "position_m": [
+            -0.088,
+            0.0,
+            0.082
+          ]
+        },
+        {
+          "name": "AXLE_RIGHT",
+          "parent": "A20_AxleSupport",
+          "position_m": [
+            0.088,
+            0.0,
+            0.082
+          ]
+        },
+        {
+          "name": "PIVOT",
+          "parent": "A20_AxleSupport",
+          "position_m": [
+            0.0,
+            0.0,
+            0.082
+          ]
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "id": "A21",
+      "asset": "A21_StopBlock",
+      "name": "Mechanical limit stop",
+      "render_triangles": 324,
+      "proxy_triangles": 12,
+      "visual_bounds_m": [
+        0.097,
+        0.056,
+        0.077
+      ],
+      "markers": [
+        {
+          "name": "CONTACT",
+          "parent": "A21_StopBlock",
+          "position_m": [
+            0.0,
+            0.0,
+            0.077
+          ]
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "id": "A22",
+      "asset": "A22_Counterweight",
+      "name": "Counterweight",
+      "render_triangles": 1104,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.07,
+        0.044,
+        0.039
+      ],
+      "markers": [
+        {
+          "name": "MOUNT",
+          "parent": "A22_Counterweight",
+          "position_m": [
+            0.0,
+            0.0,
+            0.006
+          ]
+        }
+      ],
+      "notes": {
+        "physics": "Mass and damping are assigned by the engine; positive Y supports spatula blade; attach counterweight behind fulcrum."
+      }
+    },
+    {
+      "id": "A23",
+      "asset": "A23_StopperGate",
+      "name": "活动挡片 · Independent release gate",
+      "render_triangles": 2532,
+      "proxy_triangles": 12,
+      "visual_bounds_m": [
+        0.175,
+        0.0565,
+        0.10277
+      ],
+      "markers": [
+        {
+          "name": "IN",
+          "parent": "A23_StopperGate",
+          "position_m": [
+            0.0,
+            -0.03,
+            0.014
+          ]
+        },
+        {
+          "name": "OUT",
+          "parent": "A23_StopperGate",
+          "position_m": [
+            0.0,
+            0.03,
+            0.014
+          ]
+        },
+        {
+          "name": "ACTUATE_Lever",
+          "parent": "PIVOT_Stopper_X",
+          "position_m": [
+            0.054,
+            0.034,
+            -0.012
+          ]
+        }
+      ],
+      "notes": {
+        "rotation_axis": "local +X",
+        "closed_deg": 0.0,
+        "open_max_deg": 88.0,
+        "clear_width_m": 0.122
+      }
+    },
+    {
+      "id": "A24",
+      "asset": "A24_StarCrumb",
+      "name": "Collectible star crumb",
+      "render_triangles": 552,
+      "proxy_triangles": 0,
+      "visual_bounds_m": [
+        0.04171,
+        0.03967,
+        0.017
+      ],
+      "markers": [
+        {
+          "name": "TRIGGER_CENTER",
+          "parent": "A24_StarCrumb",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "notes": {
+        "trigger_radius_m": 0.027
+      }
+    }
+  ]
+}
